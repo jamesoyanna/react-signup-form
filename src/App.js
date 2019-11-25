@@ -26,9 +26,9 @@ function App() {
         </div>
 
         <div className="FormCenter">
-          <form className="FormFields" onSubmit={this.handleSubmit}>
+          <form className="FormFields" >
             <div className="FormFields">
-              <label className="FormFirld__Label" thmlFor="name">
+              <label className="FormFirld__Label" htmlFor="name">
                 Full Name
               </label>
               <input
@@ -39,8 +39,7 @@ function App() {
                 name="name"
               ></input>
             </div>
-          </form>
-        </div>
+      
 
         <div className="FormField">
           <label className="FormField__Label" htmlFor="password">
@@ -71,8 +70,9 @@ function App() {
        <input className="FormField__Checkbox" type="checkbox" name="asAgreed">I agree all statment in</input>
        <a href="FormField__TermsLink">terms of services</a>
       </label>
-
+    </form>
       </div>
+    </div>
     </div>
   );
 }
